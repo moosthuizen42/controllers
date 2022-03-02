@@ -1,5 +1,5 @@
 module.exports = {
-  collectCoverage: true,
+  collectCoverage: false,
   // Ensures that we collect coverage from all source files, not just tested
   // ones.
   collectCoverageFrom: ['./src/**.ts'],
@@ -26,7 +26,7 @@ module.exports = {
   // restoreMocks: true,
   setupFiles: ['./tests/setupTests.ts'],
   testEnvironment: 'jsdom',
-  testRegex: ['\\.test\\.(ts|js)$'],
+  testRegex: ['\\third-party.PhishingController.test\\.(ts|js)$'],
   testTimeout: 5000,
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
